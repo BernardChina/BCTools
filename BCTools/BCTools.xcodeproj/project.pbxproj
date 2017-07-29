@@ -15,6 +15,7 @@
 		922884921F2C602C001C4421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922884901F2C602C001C4421 /* LaunchScreen.storyboard */; };
 		9228849D1F2C602C001C4421 /* BCToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9228849C1F2C602C001C4421 /* BCToolsTests.m */; };
 		922884A81F2C602C001C4421 /* BCToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 922884A71F2C602C001C4421 /* BCToolsUITests.m */; };
+		922884BE1F2C66AD001C4421 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 922884BD1F2C66AD001C4421 /* NSString+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		922884A31F2C602C001C4421 /* BCToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		922884A71F2C602C001C4421 /* BCToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCToolsUITests.m; sourceTree = "<group>"; };
 		922884A91F2C602C001C4421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		922884BC1F2C66AD001C4421 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		922884BD1F2C66AD001C4421 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		922884811F2C602C001C4421 /* BCTools */ = {
 			isa = PBXGroup;
 			children = (
+				922884B51F2C63D7001C4421 /* Tools */,
 				922884851F2C602C001C4421 /* AppDelegate.h */,
 				922884861F2C602C001C4421 /* AppDelegate.m */,
 				922884881F2C602C001C4421 /* ViewController.h */,
@@ -139,6 +143,15 @@
 			);
 			path = BCToolsUITests;
 			sourceTree = "<group>";
+		};
+		922884B51F2C63D7001C4421 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				922884BC1F2C66AD001C4421 /* NSString+Category.h */,
+				922884BD1F2C66AD001C4421 /* NSString+Category.m */,
+			);
+			path = Tools;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -207,7 +220,7 @@
 				TargetAttributes = {
 					9228847E1F2C602C001C4421 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					922884971F2C602C001C4421 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -276,6 +289,7 @@
 				9228848A1F2C602C001C4421 /* ViewController.m in Sources */,
 				922884871F2C602C001C4421 /* AppDelegate.m in Sources */,
 				922884841F2C602C001C4421 /* main.m in Sources */,
+				922884BE1F2C66AD001C4421 /* NSString+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,10 +440,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BCTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.demo.com.BCTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -437,10 +454,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BCTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.demo.com.BCTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -509,6 +529,7 @@
 				922884AE1F2C602C001C4421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		922884AF1F2C602C001C4421 /* Build configuration list for PBXNativeTarget "BCToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +538,7 @@
 				922884B11F2C602C001C4421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		922884B21F2C602C001C4421 /* Build configuration list for PBXNativeTarget "BCToolsUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +547,7 @@
 				922884B41F2C602C001C4421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
