@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921379EC1F31DBA5008E05C4 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 921379EB1F31DBA5008E05C4 /* UIColor+Category.m */; };
+		921379EF1F3203A3008E05C4 /* BCCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 921379EE1F3203A3008E05C4 /* BCCommand.m */; };
+		921379F21F32040E008E05C4 /* UIControl+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 921379F11F32040E008E05C4 /* UIControl+Category.m */; };
 		922884841F2C602C001C4421 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 922884831F2C602C001C4421 /* main.m */; };
 		922884871F2C602C001C4421 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 922884861F2C602C001C4421 /* AppDelegate.m */; };
 		9228848A1F2C602C001C4421 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922884891F2C602C001C4421 /* ViewController.m */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		921379EA1F31DBA5008E05C4 /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
+		921379EB1F31DBA5008E05C4 /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
+		921379ED1F3203A3008E05C4 /* BCCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCommand.h; sourceTree = "<group>"; };
+		921379EE1F3203A3008E05C4 /* BCCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCommand.m; sourceTree = "<group>"; };
+		921379F01F32040E008E05C4 /* UIControl+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Category.h"; sourceTree = "<group>"; };
+		921379F11F32040E008E05C4 /* UIControl+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Category.m"; sourceTree = "<group>"; };
 		9228847F1F2C602C001C4421 /* BCTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		922884831F2C602C001C4421 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		922884851F2C602C001C4421 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,6 +155,12 @@
 			children = (
 				922884BC1F2C66AD001C4421 /* NSString+Category.h */,
 				922884BD1F2C66AD001C4421 /* NSString+Category.m */,
+				921379EA1F31DBA5008E05C4 /* UIColor+Category.h */,
+				921379EB1F31DBA5008E05C4 /* UIColor+Category.m */,
+				921379ED1F3203A3008E05C4 /* BCCommand.h */,
+				921379EE1F3203A3008E05C4 /* BCCommand.m */,
+				921379F01F32040E008E05C4 /* UIControl+Category.h */,
+				921379F11F32040E008E05C4 /* UIControl+Category.m */,
 			);
 			path = Tools;
 			sourceTree = SOURCE_ROOT;
@@ -282,10 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921379F21F32040E008E05C4 /* UIControl+Category.m in Sources */,
+				921379EF1F3203A3008E05C4 /* BCCommand.m in Sources */,
 				9228848A1F2C602C001C4421 /* ViewController.m in Sources */,
 				922884871F2C602C001C4421 /* AppDelegate.m in Sources */,
 				922884841F2C602C001C4421 /* main.m in Sources */,
 				922884BE1F2C66AD001C4421 /* NSString+Category.m in Sources */,
+				921379EC1F31DBA5008E05C4 /* UIColor+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
