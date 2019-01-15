@@ -226,7 +226,7 @@
         
         if (intTemp > 9){
             carryBit = 1;
-            result = [NSString stringWithFormat:@"%zi%@",intTemp % 10,result];
+            result = [NSString stringWithFormat:@"%i%@",(int)(intTemp % 10),result];
         }else{
             carryBit = 0;
             result = [NSString stringWithFormat:@"%zi%@",intTemp,result];
@@ -237,7 +237,7 @@
             }else{
                 largestBit = [[num1 substringWithRange:NSMakeRange(num1.length - i - 1, 1)] integerValue];
                 NSString *restStringOfNum1 = [num1 substringWithRange:NSMakeRange(0, num1.length - num2.length - 1)];
-                result = [NSString stringWithFormat:@"%@%zi%@", restStringOfNum1,largestBit + carryBit,result];
+                result = [NSString stringWithFormat:@"%@%i%@", restStringOfNum1,(int)(largestBit + carryBit),result];
             }
         }
     }
