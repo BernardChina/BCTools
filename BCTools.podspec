@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BCTools"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "常用的一些工具类."
 
   # This description is used to generate tags and improve search results.
